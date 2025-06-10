@@ -1,0 +1,368 @@
+body{
+    margin: 0;
+}
+.product-list {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+}
+
+.product-list-item {
+    margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+}
+
+.product-left {
+  display: flex;
+  align-items: center;
+}
+
+.product-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 15px;
+}
+
+.product-info {
+  font-size: 16px;
+}
+
+.product-price {
+  color: #555;
+}
+
+.product-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.edit-btn {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+.edit-btn:hover {
+  background-color: #0056b3;
+}
+
+.delete-btn {
+  background-color: #DC3545;
+  color: #fff;
+}
+
+.delete-btn:hover {
+  background-color: #a71d2a;
+}
+/* users design */ 
+/* User management section styles */
+
+h1.user-title {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2.admin-info {
+    color: green;
+    margin-bottom: 25px;
+}
+
+.user-card {
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+.user-card.admin {
+    border-left: 5px solid green;
+}
+
+.user-card p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.user-card a {
+    display: inline-block;
+    margin-top: 8px;
+    text-decoration: none;
+    color: #fff;
+    background: #007BFF;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.user-card a:hover {
+    background: #0056b3;
+}
+/* edit product design*/
+.product-form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    max-width: 500px;
+    width: 100%;
+    margin: 2rem auto;
+}
+
+.product-form h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;
+}
+
+.product-form label {
+    display: block;
+    margin: 1rem 0 0.3rem;
+    font-weight: 600;
+    color: #444;
+}
+
+.product-form input[type="text"],
+.product-form input[type="number"],
+.product-form textarea,
+.product-form input[type="file"] {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.product-form input[type="text"]:focus,
+.product-form input[type="number"]:focus,
+.product-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.product-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.product-form .product-image {
+    display: block;
+    margin: 1rem 0;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.product-form .submit-btn {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: background-color 0.2s;
+}
+
+.product-form .submit-btn:hover {
+    background-color: #0056b3;
+}
+/*Add new product design */ 
+.product-form {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    max-width: 500px;
+    margin: 3rem auto;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.product-form h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333333;
+    text-align: center;
+}
+
+.product-form label {
+    display: block;
+    margin: 1rem 0 0.3rem;
+    font-weight: 600;
+    color: #555555;
+}
+
+.product-form input[type="text"],
+.product-form input[type="number"],
+.product-form textarea,
+.product-form input[type="file"] {
+    width: 100%;
+    padding: 0.65rem 0.9rem;
+    margin-bottom: 1rem;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.product-form input[type="text"]:focus,
+.product-form input[type="number"]:focus,
+.product-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+}
+
+.product-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.product-form .submit-btn {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: #ffffff;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.3s, transform 0.15s;
+}
+
+.product-form .submit-btn:hover {
+    background: linear-gradient(45deg, #0056b3, #004080);
+    transform: translateY(-2px);
+}
+
+.product-form .submit-btn:active {
+    transform: translateY(0);
+}
+/* design for magane orders*/
+
+.orders-page {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.order-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 25px 30px;
+    margin-bottom: 35px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.order-card:hover {
+    transform: translateY(-4px);
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.order-date {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 6px;
+}
+
+.order-status {
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    background: #e8f0fe;
+    color: #1a73e8;
+}
+
+.order-status.pending {
+    background: #fff3cd;
+    color: #856404;
+}
+.order-status.sent {
+    background: #d4edda;
+    color: #155724;
+}
+.order-status.delivered {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.order-details {
+    margin-top: 20px;
+}
+
+.order-details-header,
+.order-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 10px;
+    padding: 14px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 0.95rem;
+}
+
+.order-details-header {
+    font-weight: 600;
+    color: #444;
+    border-bottom: 2px solid #ccc;
+}
+
+.order-item:last-child {
+    border-bottom: none;
+}
+
+.order-item span {
+    color: #333;
+}
+
+.order-user {
+    margin-top: 20px;
+    font-size: 0.95rem;
+    color: #1c0699de;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.order-user strong {
+    margin-right: 8px;
+}
+

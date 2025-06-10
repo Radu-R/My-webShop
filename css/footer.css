@@ -1,0 +1,77 @@
+/* General styling for the page
+.footer-font {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8fa;
+}*/
+ 
+/* Footer container */
+footer {
+    background-color: #557ba1;
+    color: #ffffff; /* Change text color to white */
+    padding: 10px 10px;
+    text-align: left;    
+   
+}
+
+/* Footer layout */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px; /* Limit the width of the footer */
+    margin: 0 auto;
+}
+
+/* Footer information section */
+.footer-info, .footer-hours, .footer-social {
+    width: 30%;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+.footer-info p, .footer-hours ul, .footer-social ul {
+    margin: 5px 0;
+}
+
+.footer-info a, .footer-social a {
+    color: rgb(12, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer-info a:hover, .footer-social a:hover {
+    text-decoration: underline;
+}
+
+/* Opening hours styling */
+.footer-hours ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-hours li {
+    font-size: 17px;
+}
+
+/* Footer bottom text */
+.footer-bottom {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-info, .footer-hours, .footer-social {
+        width: 100%;
+        text-align: left; /* Keep text aligned to the left */
+        padding: 10px; /* Add some padding for spacing */
+    }
+}
